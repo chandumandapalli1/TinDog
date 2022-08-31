@@ -1,0 +1,305 @@
+
+body {
+font-family: 'Montserrat-Black';
+/* dont know why this is not working */
+/* instead of putting text-align:center in evry where in  the code now putting it in the body section so that
+it is applied to the entire body of the website ..if any deformation occurs for some elements after this
+try adjusting them with text-align:left/right  .. Here big heading has undergone out of order alignment and
+that is been corrected using text-align:left*/
+text-align:center;
+}
+
+/* Here paddig:7% 15% is also added 4 times do put all elemnts using it to be under a class name or include them
+under container-fluid by enclosing their code within div of container-fluid.. i..e
+<div class="container-fluid">
+....................
+..........
+</div>
+now declare a class in style.css and add padding:7% 15% into it .. */
+
+/* Grouping all headings sharing the common items or elements */
+h1,h2,h3,h4,h5,h6
+{
+  font-family:'Montserrat-Black';
+  font-weight:900;
+}
+/* h2
+{
+  font-size:3rem;
+  line-height: 1.5;
+} */
+/* h3
+{
+
+  font-size:2rem;
+
+} */
+
+.big-heading{
+  font-family:'Montserrat-Black';
+  font-weight:900;
+  font-size:3.5rem;
+  line-height:1.5;
+
+}
+.section-heading
+{
+  font-size:3rem;
+  line-height: 1.5;
+}
+p
+{
+  color:#8f8f8f;
+}
+
+
+#title
+{
+  /* background-color:#ff4c68; */
+  color:#fff;
+  /* here the color of the text can be added  to both h1 or title but since all the contents in the text are to be changed
+  so better to use color in title */
+  /* by placing text-align:center in the body this title section becomes center so making it left aligned to
+  restore its previous state */
+  text-align:left;
+}
+
+.container-fluid
+{
+  padding:3% 15% ;
+  background-color: blue;
+  margin-right:15px;
+}
+
+/* colored and white sections */
+/* removing all background-color at different places and dividing them  into two parts 1. colored-section   2.white-section
+now they are added as class to the respective  sections which suits them and they are defined here */
+
+.colored-section{
+  background-color:#ff4c68;
+  color:#fff;
+}
+.white-section
+{
+  background-color:#fff;
+}
+
+
+/* Navigation Bar */
+.navbar
+{
+  /* by placing padding-bottom the phone image will move down little 2 rem */
+  padding-bottom:2rem;
+
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+/* nav item refres to the space around them  */
+.nav-item
+{
+  /* padding give gap between the nav item items */
+  padding:0 18px;
+}
+
+/* nav link acutally refers to the content in the <li> items */
+.nav-link{
+  font-size:1.2rem;
+  font-family:"Montserrat-light";
+}
+
+/* Download buttons */
+.download{
+  margin:5% 3% 5% 0;
+
+
+}
+
+
+/* title image */
+.title-image
+{
+  width:23%;
+   height: 95%;
+  transform:rotate(25deg);
+  /* Here we are moving the title imge to hide under the features section */
+  /* z-index:-1; */
+  position:absolute;
+  /* image will be moved to right by 30% folwing the columan of download button on the top
+  download button and title image will be aligned on the same columan */
+  right:25%;
+}
+/* Features section */
+#features
+{
+  /* for brining those easy to use and other 2 elements to the middle of the page leaving 7 % on top and bottom
+  15% left and right */
+  padding:7% 15%;
+  /* background-color:#fff; */
+  /* here using relative position instead of absolute index bcz absolute makes other elements to modify and let
+  the  feature section affect other element on the screen but realtive doesnt affect  */
+  position:relative;
+  /* z-index:1; */
+}
+
+
+.feature-box
+{
+  /* text entered is set up to center position */
+  /* text-align:center; */
+ /* here guratee to work is looking to long to by adding padding on T,B,L,R it will be pushed to bottom as shown */
+  padding:5%;
+}
+
+.feature-title{
+  font-size:2rem;
+
+}
+
+.icon
+{
+
+/* changing color of the image so that our own class is defined  */
+  color:#ef8172;
+
+  /* giving some gap between image and below text by placing margin at bottom */
+
+
+
+
+}
+
+.icon:hover{
+  /* change the color is icon when it is hovered */
+
+  color:#ff4c68;
+}
+
+
+
+/* Testimonials section */
+#testimonials
+{
+  /* padding so that  all testimonial section willcome to middle part as same as features part */
+  padding:3% 15%;
+/* allgining thee I no longer have to sniff text ad all the txt in the section will be center aligned */
+  /* text-align:center; */
+  /* background color of the section */
+  background-color:#ef8172;
+
+  /* color of the text in the sectin to white */
+/* color:#fff; */
+}
+.testimonial-image
+{
+  width:10%;
+  /* for making the image of the dog to be in circle shape */
+  border-radius:100%;
+
+  /* adding a 10px on  all of the sides of dog image   .. creating some space for the dog*/
+  margin:10px;
+
+}
+
+.testimonial-text
+{
+  font-size:3rem;
+  line-height: 1.5;
+}
+
+.carousel-item{
+  /* for letting buttons to take more gap frm text in the slide show */
+  padding:7% 15%;
+}
+
+
+/* Press section */
+
+#press
+{
+  /* now after adding this background color this press sectin loooks as if it a part of testimonial section */
+  background-color:#ef8172;
+  /* all the text present in the press sectin be center aligned */
+
+  /* text-align:center; */
+  /* adding padding so that images come to some middlepart */
+padding:5%;
+}
+
+.press-logo
+{
+  /* since the images are very large reducingthe width of them  */
+  width:15%;
+  /* creatin some gap between every image (element) */
+  margin:20px 20px 50px;
+}
+
+
+/* pricing section */
+#pricing{
+  padding:100px;
+  /* text-align:center; */
+}
+
+.pricing-column{
+padding:3% 2%;
+
+}
+
+.price-item
+{
+  font-size:3rem;
+  line-height: 1.5;
+}
+
+/* CTA section */
+#cta
+{
+  /* background-color:#ff4c68; */
+  /* text-align:center; */
+
+  /* color:#fff; */
+  padding:7% 15%;
+}
+/* #footer{
+  background-color:#ff4c68;
+} */
+
+/* because cta-heading is same as big-heading so changing its class to big-heading in index file */
+.cta-heading
+{
+font-family:"Montserrat-Black";
+font-size:3.5rem;
+line-height:1.5;
+
+}
+
+/* Footer section */
+#footer{
+  padding:7% 15%;
+  /* text-align:center; */
+}
+.social-icon
+{
+  margin:20px 10px;
+}
+
+
+@media (max-width:1028px)
+{
+
+  #title{
+    /* text-align:center; */
+  }
+  .title-image{
+    position:static;
+    transform:rotate(0);
+    width:60%;
+    height:80%;
+  }
+}
